@@ -1,0 +1,5 @@
+#! /bin/sh
+
+/nginx/proxy.conf.sh > /etc/nginx/conf.d/proxy.conf
+
+exec nginx

@@ -1,0 +1,6 @@
+dev:
+  image: node:7.9
+  volumes:
+    - .:/app
+  working_dir: /app
+  command: bash

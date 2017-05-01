@@ -6,6 +6,10 @@ This is Reece internal Docker traning material.
 
   - [Docker for Mac](https://docs.docker.com/docker-for-mac/)
   - [Docker for Windows](https://docs.docker.com/docker-for-windows/)
+  - Linux
+    ```
+    $ curl -sSL https://get.docker.com/ | sh
+    ```
 
 2. Clone this repository
 

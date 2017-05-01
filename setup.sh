@@ -75,5 +75,9 @@ pull() {
 }
 
 echo "Pulling some images to get you started ..."
+pull centos
 pull ubuntu
+pull ubuntu:14.04
+pull ubuntu:16.04
+pull node:7.9
 

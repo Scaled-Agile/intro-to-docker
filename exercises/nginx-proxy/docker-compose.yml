@@ -1,0 +1,12 @@
+hello:
+  image: tutum/hello-world
+
+nginx:
+  build: .
+  environment:
+    BACKEND: app
+    PORT: 5000
+  links:
+  - hello:app
+  ports:
+  - 8080:5000
