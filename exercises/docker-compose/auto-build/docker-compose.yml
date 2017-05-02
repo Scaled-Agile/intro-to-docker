@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  app:
+    build: ../../node-hello-world
+
+  proxy:
+    build: ../../nginx-proxy
+    depends_on:
+      - app
+    environment:
+      BACKEND: app
+    ports:
+      - 5678:80
