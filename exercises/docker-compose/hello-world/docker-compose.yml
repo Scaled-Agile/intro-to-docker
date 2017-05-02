@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  app:
+    image: jasonxia/node-hello-world
+
+  proxy:
+    image: jasonxia/nginx-proxy
+    depends_on:
+      - app
+    environment:
+      BACKEND: app
+    ports:
+      - 5678:80
